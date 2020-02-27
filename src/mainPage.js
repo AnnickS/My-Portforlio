@@ -1,6 +1,8 @@
 import React from "react";
 import "./mainPage.css";
 import logo from "./logo.jpg";
+import items from "./ItemsIsItems.jpg";
+import island from "./FloatingIslands.png";
 
 class mainPage extends React.Component {
   render() {
@@ -55,15 +57,14 @@ class mainPage extends React.Component {
               <div class="col-lg-12">
                 <img
                   class="img-responsive"
-                  src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png"
+                  //src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png"
                   alt=""
                 />
                 <div class="intro-text">
                   <span class="name">Annick Stefanin</span>
                   <hr class="star-light" />
                   <img src={logo} className="App-logo" alt="logo" />
-                  <p class="skills">Landing Page Layout</p>
-                  <p class="skills">Scroll to see the effect</p>
+                  <p class="skills">Software Engineer</p>
                 </div>
               </div>
             </div>
@@ -80,13 +81,13 @@ class mainPage extends React.Component {
               </div>
               <div class="row">
                 <div class="col-sm-4">
-                  <img src="http://lorempixel.com/360/260/nature/" />
+                  <img src={island} className="image-links" />
                 </div>
                 <div class="col-sm-4">
-                  <img src="http://lorempixel.com/360/260/animals/" />
+                  <img src={items} className="image-links" />
                 </div>
                 <div class="col-sm-4">
-                  <img src="http://lorempixel.com/360/260/abstract/" />
+                  <img src={items} className="image-links" />
                 </div>
               </div>
             </div>
@@ -102,19 +103,20 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                   <p>
-                    Freelancer is a free bootstrap theme created by Start
-                    Bootstrap. The download includes the complete source files
-                    including HTML, CSS, and JavaScript as well as optional LESS
-                    stylesheets for easy customization.
+                    I am a Bellevue College Computer Science student interested
+                    in developing video games and VR applications.
                   </p>
                 </div>
                 <div class="col-lg-4">
                   <p>
-                    Whether you're a student looking to showcase your work, a
-                    professional looking to attract clients, or a graphic artist
-                    looking to share your projects, this template is the perfect
-                    starting point!
+                    As an assistant working at Bellevue College XR Lab I
+                    construct workshops that are presented to classes across a
+                    variety of vocations to help facilitate student learning
+                    utilizing virtual reality equipment.
                   </p>
+                </div>
+                <div class="col-lg-4">
+                  <p>I am a test</p>
                 </div>
               </div>
             </div>

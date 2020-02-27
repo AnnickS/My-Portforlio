@@ -9,6 +9,8 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={mainPage} />
+        <Route exact path="/ItemsIsItems" component={mainPage} />
+        <Route exact path="/FloatingIsland" component={mainPage} />
       </Switch>
       {/* <div className="App">
         <header className="App-header">
