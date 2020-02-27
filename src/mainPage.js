@@ -3,6 +3,8 @@ import "./mainPage.css";
 import logo from "./logo.jpg";
 import items from "./ItemsIsItems.jpg";
 import island from "./FloatingIslands.png";
+import github from "./github.svg";
+import linkedin from "./linkedin.png";
 
 class mainPage extends React.Component {
   render() {
@@ -55,11 +57,6 @@ class mainPage extends React.Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <img
-                  class="img-responsive"
-                  //src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png"
-                  alt=""
-                />
                 <div class="intro-text">
                   <span class="name">Annick Stefanin</span>
                   <hr class="star-light" />
@@ -75,7 +72,7 @@ class mainPage extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>PORTFOLIO</h2>
+                  <h2>Portfolio</h2>
                   <hr class="star-primary" />
                 </div>
               </div>
@@ -103,20 +100,27 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                   <p>
-                    I am a Bellevue College Computer Science student interested
-                    in developing video games and VR applications.
+                    I am a software developer interested in video game
+                    development. I have over a year expereince developing in the
+                    Unity Game Engine, and have worked with C#, React, and Java.
+                    Go ahead and check out some of my examples above!
                   </p>
                 </div>
                 <div class="col-lg-4">
                   <p>
                     As an assistant working at Bellevue College XR Lab I
                     construct workshops that are presented to classes across a
-                    variety of vocations to help facilitate student learning
-                    utilizing virtual reality equipment.
+                    variety of vocations to help facilitate student learning,
+                    while maintaining a Virtual Reality focus.
                   </p>
                 </div>
                 <div class="col-lg-4">
-                  <p>I am a test</p>
+                  <p>
+                    In my spare time I play Dungeons and Dragons with friends,
+                    game socially, and write short vignettes. My friends and
+                    family are of highest importance to me, so when I can I
+                    spend my time visiting and connecting with others.
+                  </p>
                 </div>
               </div>
             </div>
@@ -125,15 +129,28 @@ class mainPage extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Contact</h2>
+                  <h2>Connect</h2>
                   <hr class="star-primary" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="https://github.com/AnnickS">
+                        <img src={github} className="icon-links" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="https://www.linkedin.com/in/annick-stefanin-69362390">
+                        <img src={linkedin} className="icon-links" />
+                      </a>
+                    </div>
+                  </div>
+
                   {/* <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. --> */}
-                  <form name="sentMessage" id="contactForm" novalidate="">
+                  {/* <form name="sentMessage" id="contactForm" novalidate="">
                     <div class="row control-group">
                       <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Name</label>
@@ -199,7 +216,7 @@ class mainPage extends React.Component {
                         </button>
                       </div>
                     </div>
-                  </form>
+                  </form> */}
                 </div>
               </div>
             </div>
@@ -217,25 +234,3 @@ class mainPage extends React.Component {
 }
 
 export default mainPage;
-
-// $(function() {
-//   $("a[href*=#]:not([href=#])").click(function() {
-//     if (
-//       location.pathname.replace(/^\//, "") ==
-//         this.pathname.replace(/^\//, "") &&
-//       location.hostname == this.hostname
-//     ) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-//       if (target.length) {
-//         $("html,body").animate(
-//           {
-//             scrollTop: target.offset().top
-//           },
-//           1000
-//         );
-//         return false;
-//       }
-//     }
-//   });
-// });
