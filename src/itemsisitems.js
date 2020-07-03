@@ -1,49 +1,34 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import "./mainPage.css";
-import logo from "./logo.jpg";
+import "./itemsisitems.css";
 import items from "./ItemsIsItems.jpg";
-import island from "./FloatingIslands.png";
-import github from "./github.svg";
-import linkedin from "./linkedin.png";
 
-class mainPage extends React.Component {
-  render() {
-    return (
-      <div>
-        <header class="mainPage.header" id="page-top">
+class itemsisitems extends React.Component {
+    render() {
+      return (
+        <div>
+        <header class="items" id="page-top">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
                 <div class="intro-text">
-                  <span class="name">Annick Stefanin</span>
-                  <hr class="star-light" />
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <p class="skills">Software Engineer</p>
+                  <span class="name">Items is Items</span>
+                  <line />
+                  <p class="skills">A 2D Top-Down RPG</p>
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <div class="content-wrapper">
+        <div class="items-wrapper">
           <section class="primary" id="portfolio">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Portfolio</h2>
-                  <hr class="star-primary" />
+                  <h2>Gallery</h2>
+                  <line />
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4">
-                  <Link to="/FloatingIsland"><img src={island} className="image-links" /></Link>
-                </div>
-                <div class="col-sm-4">
-                  <Link to="/ItemsIsItems"><img src={items} className="image-links" /></Link>
-                </div>
-                <div class="col-sm-4">
-                  <img src={items} className="image-links" />
-                </div>
               </div>
             </div>
           </section>
@@ -52,7 +37,7 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>About</h2>
-                  <hr class="star-light" />
+                  <line />
                 </div>
               </div>
               <div class="row">
@@ -87,25 +72,11 @@ class mainPage extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Connect</h2>
-                  <hr class="star-primary" />
+                  <h2>Link</h2>
+                  <line />
                 </div>
               </div>
               <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <a href="https://github.com/AnnickS">
-                        <img src={github} className="icon-links" />
-                      </a>
-                    </div>
-                    <div class="col-sm-6">
-                      <a href="https://www.linkedin.com/in/annick-stefanin-69362390">
-                        <img src={linkedin} className="icon-links" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
@@ -117,8 +88,8 @@ class mainPage extends React.Component {
           </footer>
         </div>
       </div>
-    );
-  }
+      );
+    }
 }
 
-export default mainPage;
+export default itemsisitems;

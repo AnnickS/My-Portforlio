@@ -1,0 +1,33 @@
+
+.items {
+    text-align: center;
+    color: #2e2e2e;
+    background-image: url(ItemsIsItems.jpg);
+    background-size: cover;
+  
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.items-wrapper {
+    background-color: #f8f8f8;
+    /*opacity: 0.75;*/
+    top: 87%;
+    min-height: 12%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+
+line {
+    content: "\f005";
+    display: inline-block;
+    width: 45%;
+    margin: 25px auto 30px;
+    border-top: solid 5px;
+}

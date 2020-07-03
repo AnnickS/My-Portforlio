@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import mainPage from "./mainPage";
-import logo from "./logo.jpg";
+import itemsisitems from "./itemsisitems";
+import floatingisland from "./floatingisland";
 import "./App.css";
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={mainPage} />
-        <Route exact path="/ItemsIsItems" component={mainPage} />
-        <Route exact path="/FloatingIsland" component={mainPage} />
+        <Route exact path="/ItemsIsItems" component={itemsisitems} />
+        <Route exact path="/FloatingIsland" component={floatingisland} />
       </Switch>
       {/* <div className="App">
         <header className="App-header">
