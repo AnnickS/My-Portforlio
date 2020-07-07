@@ -1,5 +1,5 @@
 import React from "react";
-import "./itemsisitems.css";
+import "./portfolio.css";
 import items from "./ItemsIsItems.jpg";
 
 class itemsisitems extends React.Component {
@@ -13,13 +13,13 @@ class itemsisitems extends React.Component {
                 <div class="intro-text">
                   <span class="name">Items is Items</span>
                   <line />
-                  <p class="skills">A 2D Top-Down RPG</p>
+                  <p class="skills">A 2D Top-down RPG</p>
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <div class="items-wrapper">
+        <div class="content-wrapper">
           <section class="primary" id="portfolio">
             <div class="container">
               <div class="row">
@@ -72,8 +72,7 @@ class itemsisitems extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Link</h2>
-                  <line />
+                  <h2><a href="https://agroupofpeople.itch.io/items-is-items">Play</a></h2>
                 </div>
               </div>
               <div class="row">

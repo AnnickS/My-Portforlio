@@ -4,6 +4,7 @@ import "./mainPage.css";
 import logo from "./logo.jpg";
 import items from "./ItemsIsItems.jpg";
 import island from "./FloatingIslands.png";
+import InsuranceValidator from "./InsuranceValidator.png";
 import github from "./github.svg";
 import linkedin from "./linkedin.png";
 
@@ -30,7 +31,7 @@ class mainPage extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Portfolio</h2>
+                  <h2>Projects</h2>
                   <hr class="star-primary" />
                 </div>
               </div>
@@ -42,7 +43,7 @@ class mainPage extends React.Component {
                   <Link to="/ItemsIsItems"><img src={items} className="image-links" /></Link>
                 </div>
                 <div class="col-sm-4">
-                  <img src={items} className="image-links" />
+                  <img src={InsuranceValidator} className="image-links" />
                 </div>
               </div>
             </div>
