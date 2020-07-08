@@ -2,7 +2,7 @@
 .items {
     text-align: center;
     color: #2e2e2e;
-    background-image: url(ItemsIsItems.jpg);
+    background-image: url(photos/ItemsIsItems.jpg);
     background-size: cover;
   
     position: fixed;
@@ -17,7 +17,7 @@
 .island {
     text-align: center;
     color: #2e2e2e;
-    background-image: url(FloatingIslandSide.png);
+    background-image: url(photos/FloatingIslandSide.png);
     background-size: cover;
   
     position: fixed;

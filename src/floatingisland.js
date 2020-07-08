@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import island from "./FloatingIslands.png";
+import island from "./photos/FloatingIslands.png";
 
 class floatingisland extends React.Component {
     render() {
@@ -11,7 +11,7 @@ class floatingisland extends React.Component {
             <div class="row">
               <div class="col-lg-12">
                 <div class="intro-text">
-                  <span class="name">Floating Island</span>
+                  <span class="name">Floating Island Concept:</span>
                   <line />
                   <p class="skills">Autonomous Walls</p>
                 </div>

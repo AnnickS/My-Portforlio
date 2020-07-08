@@ -1,11 +1,11 @@
 import React from "react";
 import "./portfolio.css";
-import items from "./ItemsIsItems.jpg";
+import items from "./photos/ItemsIsItems.jpg";
 
 class itemsisitems extends React.Component {
-    render() {
-      return (
-        <div>
+  render() {
+    return (
+      <div>
         <header class="items" id="page-top">
           <div class="container">
             <div class="row">
@@ -43,10 +43,11 @@ class itemsisitems extends React.Component {
               <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                   <p>
-                    I am a software developer interested in video game
-                    development. I have over a year expereince developing in the
-                    Unity Game Engine, and have worked with C#, React, and Java.
-                    Go ahead and check out some of my examples above!
+                    Items is Items is a 2D RPG created as a senior project I 
+                    assisted in developing alongside 2 other Bellevue College 
+                    students. Developed in Unity 2D, our focus was to create a 
+                    game where all objects were interactable and had a purpose 
+                    existing in the game.
                   </p>
                 </div>
                 <div class="col-lg-4">
@@ -81,14 +82,13 @@ class itemsisitems extends React.Component {
           </section>
           <footer
             class="container"
-            // style="min-height:200px; background-color:#18bc9c;color:#fff;text-align:center;padding-top:50px;"
           >
             {/* INSPIRED BY PURECSS.IO © 2015  */}
           </footer>
         </div>
       </div>
-      );
-    }
+    );
+  }
 }
 
 export default itemsisitems;

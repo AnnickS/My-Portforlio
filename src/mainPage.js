@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./mainPage.css";
-import logo from "./logo.jpg";
-import items from "./ItemsIsItems.jpg";
-import island from "./FloatingIslands.png";
-import InsuranceValidator from "./InsuranceValidator.png";
+
+import logo from "./photos/logo.jpg";
+import items from "./photos/ItemsIsItems.jpg";
+import island from "./photos/FloatingIslands.png";
+import InsuranceValidator from "./photos/InsuranceValidator.png";
 import github from "./github.svg";
-import linkedin from "./linkedin.png";
+import linkedin from "./photos/linkedin.png";
 
 class mainPage extends React.Component {
   render() {
@@ -60,7 +61,7 @@ class mainPage extends React.Component {
                 <div class="col-lg-4 col-lg-offset-2">
                   <p>
                     I am a software developer interested in video game
-                    development. I have over a year expereince developing in the
+                    development. I have over a year experience developing in the
                     Unity Game Engine, and have worked with C#, React, and Java.
                     Go ahead and check out some of my examples above!
                   </p>
