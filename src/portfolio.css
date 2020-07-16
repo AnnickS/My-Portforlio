@@ -16,14 +16,14 @@
 
 .island {
     text-align: center;
-    color: #2e2e2e;
+    color: #fff;
     background-image: url(photos/FloatingIslandSide.png);
     background-size: cover;
   
     position: fixed;
     width: 100%;
     z-index: 1;
-    height: 100%;
+    height: 88%;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -32,7 +32,27 @@
 line {
     content: "\f005";
     display: inline-block;
-    width: 45%;
+    width: 25%;
     margin: 25px auto 30px;
     border-top: solid 5px;
+}
+
+.TextWrapRight {
+    float: right;
+    margin: 10px;
+    max-width: 35%;
+    height: auto;
+}
+
+.TextWrapLeft {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 35%;
+    height: auto;
+}
+
+.wrap {
+    text-align: justify;
+    text-indent: 2em;
+    word-wrap: keep-all;
 }

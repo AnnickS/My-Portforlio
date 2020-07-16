@@ -19,7 +19,7 @@ class mainPage extends React.Component {
               <div class="col-lg-12">
                 <div class="intro-text">
                   <span class="name">Annick Stefanin</span>
-                  <hr class="star-light" />
+                  <hr class="line-light" />
                   <img src={logo} className="App-logo" alt="logo" />
                   <p class="skills">Software Engineer</p>
                 </div>
@@ -33,7 +33,7 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>Projects</h2>
-                  <hr class="star-primary" />
+                  <hr class="line-primary" />
                 </div>
               </div>
               <div class="row">
@@ -54,7 +54,7 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>About</h2>
-                  <hr class="star-light" />
+                  <hr class="line-light" />
                 </div>
               </div>
               <div class="row">
@@ -90,7 +90,7 @@ class mainPage extends React.Component {
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>Connect</h2>
-                  <hr class="star-primary" />
+                  <hr class="line-primary" />
                 </div>
               </div>
               <div class="row">

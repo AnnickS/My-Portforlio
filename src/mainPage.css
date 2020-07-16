@@ -1,4 +1,4 @@
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://use.fontawesome.com/f43d9f75f4.js");
 
 /* HERE STARTS THE MAGIC */
 header {
@@ -58,43 +58,14 @@ section h2 {
   font-size: 3em;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.line-light,
+hr.line-primary {
   margin: 25px auto 30px;
   padding: 0;
   max-width: 250px;
   border: 0;
   border-top: solid 5px;
   text-align: center;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  padding: 0 0.25em;
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-
-hr.star-light {
-  border-color: #fff;
-}
-
-hr.star-light:after {
-  color: #fff;
-  background-color: #2e2e2e;
-}
-
-hr.star-primary {
-  border-color: #2e2e2e;
-}
-
-hr.star-primary:after {
-  color: #2e2e2e;
-  background-color: #f8f8f8;
 }
 
 section.primary h2 {
@@ -107,7 +78,6 @@ section.success {
 }
 
 .image-links {
-  height: 25vmin;
   max-width: 100%;
   border-radius: 8px;
   margin-left: auto;
