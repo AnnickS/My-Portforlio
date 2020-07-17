@@ -51,7 +51,7 @@ class itemsisitems extends React.Component {
                   were included in the test suite to ensure the integrity of NPC functionality.</p>
                 <p>Our final product can be played on itch.io with the link below. 
                   Our project code is displayed on github 
-                  under <a href="https://github.com/AnnickS/Items-is-Items">items-is-items.</a>
+                  under <a href="https://github.com/AnnickS/Items-is-Items">items-is-items</a>.
                   <br></br><br></br><br></br><br></br></p>
                 <div class="col-lg-12 text-center">
                   <h2><a href="https://agroupofpeople.itch.io/items-is-items">Play</a></h2>

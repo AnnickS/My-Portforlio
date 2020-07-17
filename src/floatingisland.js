@@ -51,8 +51,8 @@ class floatingisland extends React.Component {
                   development. Underneath there is a collision box that resets the player 
                   to their initial starting position, preventing the player from falling 
                   through the world indefinitely.</p>
-                <p>The code for this project can be found on my github under 
-                  the <a href="https://github.com/AnnickS/Floating-Island">floating-island repository</a>. 
+                <p>The code for this project can be found on my github 
+                  under <a href="https://github.com/AnnickS/Floating-Island">floating-island</a>. 
                   You can play the level on itch.io using the link below.<br></br><br></br><br></br><br></br></p>
                 <div class="col-lg-12 text-center">
                   <h2><a href="https://silverasea.itch.io/inescapable-island">Play</a></h2>
