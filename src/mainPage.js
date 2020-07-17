@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import "./mainPage.css";
 
 import logo from "./photos/logo.jpg";
@@ -37,13 +38,29 @@ class mainPage extends React.Component {
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4">
-                  <Link to="/FloatingIsland"><img src={island} className="image-links" /></Link>
+                <div class="col-sm-4 col-">
+                <MDBView hover zoom>
+                  <Link to="/FloatingIsland">
+                    <img src={island} className="image-links"/>
+                    <MDBMask className="flex-center" overlay="white-light">
+                      <p className="black-text">Floating Island</p>
+                    </MDBMask>
+                    </Link>
+                  </MDBView>
+                  <p> </p>
                 </div>
                 <div class="col-sm-4">
-                  <Link to="/ItemsIsItems"><img src={items} className="image-links" /></Link>
+                  <MDBView hover zoom>
+                  <Link to="/ItemsIsItems">
+                    <img src={items} className="image-links" />
+                    <MDBMask className="flex-center" overlay="white-light">
+                      <p className="black-text">Items Is Items</p>
+                    </MDBMask>
+                    </Link>
+                  </MDBView>
+                  <p> </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-1">
                   <img src={InsuranceValidator} className="image-links" />
                 </div>
               </div>
@@ -61,7 +78,7 @@ class mainPage extends React.Component {
                 <div class="col-lg-4 col-lg-offset-2">
                   <p>
                     I am a software developer interested in video game
-                    development. I have over a year experience developing in the
+                    development. I have over a year's experience developing in the
                     Unity Game Engine, and have worked with C#, React, and Java.
                     Go ahead and check out some of my examples above!
                   </p>
@@ -78,7 +95,7 @@ class mainPage extends React.Component {
                   <p>
                     In my spare time I play Dungeons and Dragons with friends,
                     game socially, and write short vignettes. My friends and
-                    family are of highest importance to me, so when I can I
+                    family are of the utmost importance to me, so when I can I
                     spend my time visiting and connecting with others.
                   </p>
                 </div>
@@ -100,6 +117,7 @@ class mainPage extends React.Component {
                       <a href="https://github.com/AnnickS">
                         <img src={github} className="icon-links" />
                       </a>
+                      <p> </p>
                     </div>
                     <div class="col-sm-6">
                       <a href="https://www.linkedin.com/in/annick-stefanin-69362390">
