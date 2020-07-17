@@ -14,7 +14,7 @@ class mainPage extends React.Component {
   render() {
     return (
       <div>
-        <header class="mainPage.header" id="page-top">
+        <header class="mainPage.header">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
