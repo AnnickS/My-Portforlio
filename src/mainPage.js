@@ -6,7 +6,7 @@ import "./mainPage.css";
 import logo from "./photos/logo.jpg";
 import items from "./photos/ItemsIsItems.jpg";
 import island from "./photos/FloatingIslands.png";
-import InsuranceValidator from "./photos/InsuranceValidator.png";
+import insurance from "./photos/InsuranceValidator.png";
 import github from "./github.svg";
 import linkedin from "./photos/linkedin.png";
 
@@ -38,30 +38,37 @@ class mainPage extends React.Component {
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4 col-">
+                <div class="col-md-4 col-">
                 <MDBView hover zoom>
                   <Link to="/FloatingIsland">
                     <img src={island} className="image-links"/>
                     <MDBMask className="flex-center" overlay="white-light">
-                      <p className="black-text">Floating Island</p>
+                      <p className="black-text"><b>Floating Island</b></p>
                     </MDBMask>
                     </Link>
                   </MDBView>
                   <p> </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                   <MDBView hover zoom>
                   <Link to="/ItemsIsItems">
                     <img src={items} className="image-links" />
                     <MDBMask className="flex-center" overlay="white-light">
-                      <p className="black-text">Items Is Items</p>
+                      <p className="black-text"><b>Items Is Items</b></p>
                     </MDBMask>
                     </Link>
                   </MDBView>
                   <p> </p>
                 </div>
-                <div class="col-sm-4 col-xs-1">
-                  <img src={InsuranceValidator} className="image-links" />
+                <div class="col-md-4 col-xs-1">
+                <MDBView hover zoom>
+                  <Link to="/InsuranceValidator">
+                    <img src={insurance} className="image-links" />
+                    <MDBMask className="flex-center" overlay="white-light">
+                      <p className="black-text"><b>Insurance Validator</b></p>
+                    </MDBMask>
+                    </Link>
+                  </MDBView>
                 </div>
               </div>
             </div>

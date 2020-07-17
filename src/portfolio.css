@@ -29,6 +29,21 @@
     left: 0;
 }
 
+.insurance {
+    text-align: center;
+    color: #fff;
+    background-image: url(photos/FloatingIslandSide.png);
+    background-size: cover;
+  
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 88%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
 line {
     content: "\f005";
     display: inline-block;
