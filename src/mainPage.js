@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBMask, MDBView } from "mdbreact";
 import "./mainPage.css";
+import EmailForum from "./emailForum";
 
 import logo from "./photos/logo.jpg";
 import items from "./photos/ItemsIsItems.jpg";
 import island from "./photos/FloatingIslands.png";
 import insurance from "./photos/InsuranceValidator.png";
-import github from "./github.svg";
-import linkedin from "./photos/linkedin.png";
 
 class mainPage extends React.Component {
   render() {
@@ -38,7 +37,7 @@ class mainPage extends React.Component {
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-4 col-">
+                <div class="col-md-4">
                 <MDBView hover zoom>
                   <Link to="/FloatingIsland">
                     <img src={island} className="image-links"/>
@@ -118,20 +117,10 @@ class mainPage extends React.Component {
                 </div>
               </div>
               <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <a href="https://github.com/AnnickS">
-                        <img src={github} className="icon-links" />
-                      </a>
-                      <p> </p>
-                    </div>
-                    <div class="col-sm-6">
-                      <a href="https://www.linkedin.com/in/annick-stefanin-69362390">
-                        <img src={linkedin} className="icon-links" />
-                      </a>
-                    </div>
-                  </div>
+                <div class="center">
+                    <p class="text-center w-responsive mx-auto mb-5">If you wish to get in contact 
+                    please don't hesitate to send an email!</p>
+                    <EmailForum/>
                 </div>
               </div>
             </div>

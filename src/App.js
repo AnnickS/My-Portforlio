@@ -13,6 +13,7 @@ function App() {
     <Router>
       <React.Fragment>
         <NavBar/>
+        <ScrollToTop/>
         <Switch>
         <Route exact path="/" component={mainPage} />
             <Route exact path="/ItemsIsItems" component={itemsisitems} />
