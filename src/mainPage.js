@@ -116,13 +116,11 @@ class mainPage extends React.Component {
                   <hr class="line-primary" />
                 </div>
               </div>
-              <div class="row">
                 <div class="center">
                     <p class="text-center w-responsive mx-auto mb-5">If you wish to get in contact 
                     please don't hesitate to send an email!</p>
                     <EmailForum/>
                 </div>
-              </div>
             </div>
           </section>
           <footer

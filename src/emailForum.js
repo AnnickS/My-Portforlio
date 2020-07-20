@@ -25,9 +25,8 @@ export default class emailForum extends Component {
     render() {
         const { status } = this.state;
         return (
-    <div class="row">
-        {/* <div class="col-md-9 mb-md-0 mb-5"> */}
-        <div class="col-md-9">
+        <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
             <form
             onSubmit={this.submitForm}
             id="contact-form"
@@ -71,7 +70,7 @@ export default class emailForum extends Component {
                 </div>
             </form>
         <div class="status"></div>
-    </div>
+        </div>
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
