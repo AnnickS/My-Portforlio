@@ -4,22 +4,35 @@ export default class emailForum extends Component {
     constructor(props) {
         super(props);
         this.submitForm = this.submitForm.bind(this);
+        this.toggleError = this.toggleError.bind(this);
         this.state = {
-            status: "",
-            showingAlert: false
+            status: ""
         };
     }
 
-    handleClickShowAlert() {
+    toggleError(){
         this.setState({
-            showingAlert: true
+            status: ""
         });
+    }
 
-        setTimeout(() => {
-            this.setState({
-                showingAlert: false
-            });
-        }, 2000);
+    submitForm(ev) {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState !== XMLHttpRequest.DONE) return;
+            if(xhr.status === 200) {
+                form.reset();
+                this.setState({ status: "SUCCESS"});
+            } else {
+                this.setState({ status: "ERROR" });
+            }
+        };
+        xhr.send(data);
     }
 
     render() {
@@ -65,8 +78,14 @@ export default class emailForum extends Component {
                     </div>
                 </div>
                 <div class="text-center text-md-left">
-                    {status === "SUCCESS" ? <p>Thanks!</p> : <button class="btn btn-primary">Submit</button>}
-                    {status === "ERROR" && <p>There was an error submitting the forum</p>}
+                    {status === "SUCCESS" ?
+                    <button disabled class="btn btn-primary">Thanks!</button> :
+                    <button class="btn btn-primary">Submit</button>}
+                    {status === "ERROR" &&
+                    <div class="alert alert-danger">
+                        <button onClick={this.toggleError} className="close" aria-label="close">&times;</button>
+                        There was an error submitting the form
+                    </div>}
                 </div>
             </form>
         <div class="status"></div>
@@ -86,26 +105,5 @@ export default class emailForum extends Component {
         </div>
     </div>
         );
-    }
-
-    submitForm(ev) {
-        ev.preventDefault();
-        const form = ev.target;
-        const data = new FormData(form);
-        const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = () => {
-            if(xhr.readyState !== XMLHttpRequest.DONE) return;
-            if(xhr.status === 2000) {
-                form.reset();
-                this.setState({ status: "SUCCESS"});
-                this.handleClickShowAlert();
-            } else {
-                this.setState({ status: "ERROR" });
-                this.handleClickShowAlert();
-            }
-        };
-        xhr.send(data);
     }
 }

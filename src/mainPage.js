@@ -38,7 +38,7 @@ class mainPage extends React.Component {
               </div>
               <div class="row">
                 <div class="col-md-4">
-                <MDBView hover zoom>
+                <MDBView hover zoom className="image-links">
                   <Link to="/FloatingIsland">
                     <img src={island} className="image-links"/>
                     <MDBMask className="flex-center" overlay="white-light">
@@ -49,18 +49,18 @@ class mainPage extends React.Component {
                   <p> </p>
                 </div>
                 <div class="col-md-4">
-                  <MDBView hover zoom>
-                  <Link to="/ItemsIsItems">
-                    <img src={items} className="image-links" />
-                    <MDBMask className="flex-center" overlay="white-light">
-                      <p className="black-text"><b>Items Is Items</b></p>
-                    </MDBMask>
+                  <MDBView hover zoom className="image-links">
+                    <Link to="/ItemsIsItems">
+                      <img src={items} className="image-links" />
+                      <MDBMask className="flex-center" overlay="white-light">
+                        <p className="black-text"><b>Items Is Items</b></p>
+                      </MDBMask>
                     </Link>
                   </MDBView>
                   <p> </p>
                 </div>
                 <div class="col-md-4 col-xs-1">
-                <MDBView hover zoom>
+                <MDBView hover zoom className="image-links">
                   <Link to="/InsuranceValidator">
                     <img src={insurance} className="image-links" />
                     <MDBMask className="flex-center" overlay="white-light">
