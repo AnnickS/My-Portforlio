@@ -14,15 +14,12 @@ class NavBar extends Component {
     render(){
         return (
                 <MDBNavbar color="purple-gradient" dark expand="md" scrolling fixed="top">
-                    <MDBNavbarBrand>
+                    <MDBNavbarBrand href="/">
                         <strong className="WhiteText">Annick's Portfolio</strong>
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                     <MDBNavbarNav left>
-                    <MDBNavItem>
-                        <MDBNavLink to="/">Home</MDBNavLink>
-                    </MDBNavItem>
                     <MDBNavItem>
                         <MDBDropdown>
                             <MDBDropdownToggle nav caret>
