@@ -1,48 +1,23 @@
 
 .items {
-    text-align: center;
-    color: #2e2e2e;
     background-image: url(photos/ItemsIsItems.jpg);
     background-size: cover;
-  
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
 }
 
 .island {
-    text-align: center;
-    color: #fff;
     background-image: url(photos/FloatingIslandSide.png);
     background-size: cover;
-  
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    height: 88%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
 }
 
 .insurance {
-    text-align: center;
-    color: #fff;
     background-image: url(photos/InsuranceValidator.png);
     background-size: cover;
     background-blend-mode: multiply;
-  
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    height: 88%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
+}
+
+.guild {
+    background-image: url(photos/RedemptionsGuildCover.png);
+    background-size: cover;
 }
 
 line {
@@ -71,7 +46,7 @@ line {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    /*width: 100%;*/
   }
 
 .wrap {

@@ -4,10 +4,12 @@ import { MDBMask, MDBView } from "mdbreact";
 import "./mainPage.css";
 import EmailForum from "./emailForum";
 
-import logo from "./photos/logo.jpg";
+import logo from "./photos/CroppedProfileImage.jpg";
 import items from "./photos/ItemsIsItems.jpg";
 import island from "./photos/FloatingIslands.png";
 import insurance from "./photos/InsuranceValidator.png";
+import guild from "./photos/RedemptionsGuildIcon.png";
+import resume from "./documents/AnnickStefaninResume.pdf";
 
 class mainPage extends React.Component {
   render() {
@@ -21,7 +23,8 @@ class mainPage extends React.Component {
                   <span class="name">Annick Stefanin</span>
                   <hr class="line-light" />
                   <img src={logo} className="App-logo" alt="logo" />
-                  <p class="skills">Software Engineer</p>
+                  <p class="tagline" >Software Engineer</p>
+                  <Link to={resume} target="_blank" download><button class="btn btn-outline-secondary btn-md m-3">Download Resume</button></Link>
                 </div>
               </div>
             </div>
@@ -29,6 +32,29 @@ class mainPage extends React.Component {
         </header>
         <div class="content-wrapper">
           <section class="primary" id="portfolio">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Work Experience</h2>
+                    <hr class="line-primary" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mx-auto">
+                <MDBView hover zoom className="image-links">
+                  <Link to="/RedemptionsGuild">
+                    <img src={guild} className="image-links" />
+                    <MDBMask className="flex-center" overlay="white-light">
+                      <p className="black-text"><b>Redemption's Guild</b></p>
+                    </MDBMask>
+                    </Link>
+                  </MDBView>
+                  <p> </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="success" id="portfolio">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
@@ -72,7 +98,7 @@ class mainPage extends React.Component {
               </div>
             </div>
           </section>
-          <section class="success" id="about">
+          <section class="primary" id="about">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
@@ -82,18 +108,20 @@ class mainPage extends React.Component {
               </div>
               <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <p>I am a software developer with a Bachelor of Science 
-                    in Computer Science interested in video game and VR/AR 
-                    development. I have over a year experience developing 
-                    in the Unity Game Engine, and have worked with C#, 
-                    React, AWS, and Java.</p>
+                  <p>I am a VR Game Developer with 2 years of professional 
+                    experience and one shipped title. I graduated from Bellevue 
+                    College with a Bachelor of Science in Computer Science in 
+                    2020, and have three years of experience developing in the 
+                    Unity Game Engine, two years in VR, and have worked with 
+                    C#, Photon Engine, React, AWS, and Java.</p>
                   <p>This portfolio page is my own personal project developed 
-                    with React and hosted on AWS using S3 and CloudFront. Go 
-                    ahead and check out some of my other projects above!</p>
+                    with React and hosted on AWS using S3 and CloudFront. 
+                    Go ahead and check out my work experience and my other 
+                    projects above!</p>
                 </div>
                 <div class="col-lg-4">
-                  <p>At my last job as an assistant working at the Bellevue 
-                    College XR Lab, I was able to work alongside the most 
+                  <p>At my job as an assistant working at the Bellevue College 
+                    XR Lab, I was able to work alongside some of the most 
                     passionate individuals with the goal of spreading the use 
                     of VR in education. I was responsible for constructing 
                     workshops that were presented to classes from across a 
@@ -115,7 +143,7 @@ class mainPage extends React.Component {
               </div>
             </div>
           </section>
-          <section class="primary" id="contact">
+          <section class="success" id="contact">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">

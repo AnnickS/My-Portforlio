@@ -26,7 +26,7 @@ class floatingisland extends React.Component {
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2>About</h2>
-                  <line />
+                  <hr class="line-light"/>
                 </div>
               </div>
                 <p>The Floating Island was created as a project for my Animation 

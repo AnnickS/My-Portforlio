@@ -23,6 +23,16 @@ class NavBar extends Component {
                     <MDBNavItem>
                         <MDBDropdown>
                             <MDBDropdownToggle nav caret>
+                                <span className="mr-2">Work Experience</span>
+                            </MDBDropdownToggle>
+                            <MDBDropdownMenu>
+                                <MDBDropdownItem href="/RedemptionsGuild">Redemption's Guild</MDBDropdownItem>
+                            </MDBDropdownMenu>
+                        </MDBDropdown>
+                    </MDBNavItem>
+                    <MDBNavItem>
+                        <MDBDropdown>
+                            <MDBDropdownToggle nav caret>
                                 <span className="mr-2">Projects</span>
                             </MDBDropdownToggle>
                             <MDBDropdownMenu>

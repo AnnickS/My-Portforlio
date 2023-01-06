@@ -93,7 +93,7 @@ export default class emailForum extends Component {
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Snohomish, WA 98296, USA</p>
+                    <p>Tampa, FL 33647, USA</p>
                 </li>
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
                     <p>+1425-892-3288</p>

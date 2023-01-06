@@ -5,6 +5,7 @@ import mainPage from "./mainPage";
 import itemsisitems from "./itemsisitems";
 import floatingisland from "./floatingisland";
 import insurancevalidator from "./insurancevalidator";
+import redemptionsguild from "./redemptionsguild";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/ItemsIsItems" component={itemsisitems} />
             <Route exact path="/FloatingIsland" component={floatingisland} />
             <Route exact path="/InsuranceValidator" component={insurancevalidator} />
+            <Route exact path="/RedemptionsGuild" component={redemptionsguild} /> 
             <Redirect from="*" to="/"/>
         </Switch>
       </React.Fragment>
