@@ -6,12 +6,13 @@ import itemsisitems from "./itemsisitems";
 import floatingisland from "./floatingisland";
 import insurancevalidator from "./insurancevalidator";
 import redemptionsguild from "./redemptionsguild";
+import toyotaconnected from "./toyotaconnected";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router>n
       <React.Fragment>
         <NavBar/>
         <ScrollToTop/>
@@ -20,7 +21,8 @@ function App() {
             <Route exact path="/ItemsIsItems" component={itemsisitems} />
             <Route exact path="/FloatingIsland" component={floatingisland} />
             <Route exact path="/InsuranceValidator" component={insurancevalidator} />
-            <Route exact path="/RedemptionsGuild" component={redemptionsguild} /> 
+            <Route exact path="/VRGameDeveloper" component={redemptionsguild} /> 
+            <Route exact path="/PrototypeGameDeveloper" component={toyotaconnected} />
             <Redirect from="*" to="/"/>
         </Switch>
       </React.Fragment>

@@ -26,7 +26,8 @@ class NavBar extends Component {
                                 <span className="mr-2">Work Experience</span>
                             </MDBDropdownToggle>
                             <MDBDropdownMenu>
-                                <MDBDropdownItem href="/RedemptionsGuild">Redemption's Guild</MDBDropdownItem>
+                                <MDBDropdownItem href="/VRGameDeveloper">VR Software Engineer</MDBDropdownItem>
+                                <MDBDropdownItem href="/PrototypeGameDeveloper">Prototype Game Developer</MDBDropdownItem>
                             </MDBDropdownMenu>
                         </MDBDropdown>
                     </MDBNavItem>
@@ -58,13 +59,13 @@ class NavBar extends Component {
                             </MDBNavLink>
                             </a>
                         </MDBNavItem>
-                        <MDBNavItem>
+                        {/*<MDBNavItem>
                         <a href="https://twitter.com/UniqueAnnick1?s=09" target="_blank">
                             <MDBNavLink disabled to="">
                                 <MDBIcon fab icon="twitter"/>
                             </MDBNavLink>
                             </a>
-                        </MDBNavItem>
+        </MDBNavItem>*/}
                     </MDBNavbarNav>
                     </MDBCollapse>
                 </MDBNavbar>

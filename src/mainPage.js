@@ -9,6 +9,7 @@ import items from "./photos/ItemsIsItems.jpg";
 import island from "./photos/FloatingIslands.png";
 import insurance from "./photos/InsuranceValidator.png";
 import guild from "./photos/RedemptionsGuildIcon.png";
+import toyota from "./photos/simulator.jpg";
 import resume from "./documents/AnnickStefaninResume.pdf";
 
 class mainPage extends React.Component {
@@ -40,12 +41,23 @@ class mainPage extends React.Component {
                 </div>
               </div>
               <div class="row">
+              <div class="col-md-4 mx-auto">
+                <MDBView hover zoom className="image-links">
+                  <Link to="/PrototypeGameDeveloper">
+                    <img src={toyota} className="image-links" />
+                    <MDBMask className="flex-center" overlay="white-light">
+                      <p className="black-text text-center"><b>Prototype Game Developer<br/>Toyota Connected North America<br/>(2023)</b></p>
+                    </MDBMask>
+                    </Link>
+                  </MDBView>
+                  <p> </p>
+                </div>
                 <div class="col-md-4 mx-auto">
                 <MDBView hover zoom className="image-links">
-                  <Link to="/RedemptionsGuild">
+                  <Link to="/VRGameDeveloper">
                     <img src={guild} className="image-links" />
                     <MDBMask className="flex-center" overlay="white-light">
-                      <p className="black-text"><b>Redemption's Guild</b></p>
+                      <p className="black-text text-center"><b>VR Software Engineer<br/>Unlit Games<br/>(2021-2022)</b></p>
                     </MDBMask>
                     </Link>
                   </MDBView>
@@ -108,37 +120,38 @@ class mainPage extends React.Component {
               </div>
               <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <p>I am a VR Game Developer with 2 years of professional 
-                    experience and one shipped title. I graduated from Bellevue 
-                    College with a Bachelor of Science in Computer Science in 
-                    2020, and have three years of experience developing in the 
-                    Unity Game Engine, two years in VR, and have worked with 
-                    C#, Photon Engine, React, AWS, and Java.</p>
-                  <p>This portfolio page is my own personal project developed 
-                    with React and hosted on AWS using S3 and CloudFront. 
-                    Go ahead and check out my work experience and my other 
-                    projects above!</p>
+                <p>My goal is to fill my life with amazing memories and create worthwhile 
+                  experiences for others to enjoy, and I wish to accomplish this goal through 
+                  the creation of video games. Games can transport players into otherwise 
+                  impossible environments and experiences, providing teaching, entertainment, 
+                  stress relief, or ways for players to meet and accomplish goals together.</p>
+                  <p>I want to bring my expertise to the table, assisting in refining design 
+                    and code so that a player can have a cohesive experience. A worthwhile 
+                    game is achieved only if developers put in the effort to reduce bugs and 
+                    create fun gameplay elements for the player to enjoy. For your message or 
+                    story to have an impact, ironing out the fundamentals is key. </p>
                 </div>
                 <div class="col-lg-4">
-                  <p>At my job as an assistant working at the Bellevue College 
-                    XR Lab, I was able to work alongside some of the most 
-                    passionate individuals with the goal of spreading the use 
-                    of VR in education. I was responsible for constructing 
-                    workshops that were presented to classes from across a 
-                    variety of vocations to help facilitate student learning 
-                    while maintaining a focus on virtual reality.</p>
-                  <p>In my time there I developed a “Video Game Design in VR” 
-                    workshop, focusing on the differences of VR game development 
-                    in comparison with regular game design.</p>
+                <p>I am a results-driven programmer with three years of professional 
+                    experience in game development. Specializing in both Virtual 
+                    Reality (VR) and prototype game development, I bring two years of 
+                    expertise in VR and one year in prototypes to the table. Notable 
+                    among my achievements is the successful delivery of a shipped VR 
+                    title, showcasing my ability to contribute to impactful projects. 
+                    Additionally, I played a key role in developing a driving simulator 
+                    featured at SEMA, underlining my capacity to bring innovative ideas 
+                    to fruition. My commitment to excellence and proven track record 
+                    make me a valuable asset to any forward-thinking development team.</p>
                 </div>
                 <div class="col-lg-4">
-                  <p>In my spare time I play Dungeons and Dragons with friends, 
-                    practice ukulele, and create stories. I enjoy drawing, writing, 
-                    and worldbuilding to further embellish the stories I design.</p>
-                  <p>Friends and family are of utmost important to me, so I enjoy 
-                    cooking and creating memorable experiences with them. My 
-                    goal is to fill my life with amazing memories, and to 
-                    create worthwhile experiences for others to enjoy.</p>
+                    <p>This portfolio page is my own personal project developed with React 
+                    and hosted on AWS. As a static website, it is served from an S3 bucket, 
+                    benefiting from automatic HTTPS certification renewal through AWS 
+                    technologies such as CloudFront, S3, Certificate Manager, and Route 
+                    53. Forum submissions were developed with Javascript, and the website 
+                    design was specified with custom made CSS code. I invite you to explore 
+                    some of my other personal projects and find detailed information about 
+                    my professional work experience in the links located above!</p>
                 </div>
               </div>
             </div>
@@ -152,8 +165,8 @@ class mainPage extends React.Component {
                 </div>
               </div>
                 <div class="center">
-                    <p class="text-center w-responsive mx-auto mb-5">If you wish to get in contact 
-                    please don't hesitate to send an email!</p>
+                    <p class="text-center w-responsive mx-auto mb-5">Feel free to reach 
+                    out by sending an email if you'd like to get in touch!</p>
                     <EmailForum/>
                 </div>
             </div>
